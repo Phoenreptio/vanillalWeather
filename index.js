@@ -63,7 +63,7 @@ console.log(response.data);
 let days =["Tue","Wed", "Thu", "Fri", "Sat"];
 let forecastHtml = ""; 
 
-days.forEach(function(day) {
+days.forEach(function (day) {
 forecastHtml = 
 forecastHtml + 
 `
@@ -76,16 +76,16 @@ forecastHtml +
 </div> 
 `; 
 }); 
-}
 
 let forecastElement = document.querySelector("#forecast");
 forecastElement.innerHTML = forecastHtml; 
+
+}
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit); 
 
 searchCity("Bern"); 
-displayForecast("Bern");
 
 
 
